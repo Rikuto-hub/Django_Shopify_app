@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('shopify/', include('shopify_app.urls')),
     path('', include('home.urls')),
+    path('shopify/', include('shopify_app.urls')),
+    path('api/', include('api.urls')),
+    path('grql/', include('graphql_api.urls')),
 ]
